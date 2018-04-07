@@ -4,11 +4,11 @@ import java.util.UUID;
 
 public class Cuenta {
 
+    private static final int MAX_OPS = 10;
+
     private UUID uuid;
     private double balance;
     private Titular titular;
-
-    private static final int MAX_OPS = 10;
     private int contadorOperaciones = 0;
     private String operaciones[] = new String[MAX_OPS];
 
